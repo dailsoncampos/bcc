@@ -1,0 +1,11 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #cccccc;  
+}
+
+.box-title{
+  %h1{
+    text-align: center;
+  }
+}
