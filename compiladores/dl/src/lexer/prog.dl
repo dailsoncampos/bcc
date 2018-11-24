@@ -1,0 +1,9 @@
+programa soma inicio
+	inteiro a;
+	inteiro b;
+	inteiro c;
+	leia(a);
+	leia(b);
+	c = a + b;
+	escreva(c);
+fim
