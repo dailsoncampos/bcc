@@ -1,0 +1,13 @@
+programa maior_num inicio
+  inteiro a;
+  inteiro b;
+  
+  a = 12 + 5 * 3;
+  b = a | b;
+  
+  c = a > b | c <= d;
+  
+  se(a > b)
+  	a = b;
+  	escreva(a);
+fim.

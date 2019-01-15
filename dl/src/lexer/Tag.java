@@ -1,24 +1,34 @@
 package lexer;
 
 public enum Tag {
-	PROGRAM("PROGRAM"),
-	BEGIN("BEGIN"), END("END"),
+	//Reserved Words
+	PROGRAM("PROGRAM"), BEGIN("BEGIN"), END("END"),
+	INT("INT"), REAL("REAL"), BOOL("BOOL"),
+	WRITE("WRITE"), IF("IF"),
+	//Assign
 	ASSIGN("ASSIGN"),
-	SUM("SUM"), MUL("MUL"),
+	//Arithmetical Operators
+	SUM("SUM"), SUB("SUB"), MUL("MUL"), 
+	//Logical Operators
 	OR("OR"),
-	NE("NT"),	LT("LT"), LE("LE"), GT("GT"), GE("GE"),
-	LIT_INT("LIT_INT"),
-	ID("ID"),
-	EOF("EOF"), UNK("UNK");
-
+	//Relational Operators
+	LT("LT"), LE("LE"), GT("GT"),
+	//Symbols
+	SEMI("SEMI"), DOT("DOT"), LPAREN("LPAREN"), RPAREN("RPAREN"),
+	//Literals and Identifiers
+	LIT_INT("LIT_INT"), LIT_REAL("LIT_REAL"), ID("ID"),
+	TRUE("TRUE"), FALSE("FALSE"),
+	//Others
+	EOF("EOF"), UNK("UNK"), TEMP("TEMP");
+	
 	private String name;
-
+	
 	private Tag(String name) {
 		this.name = name;
 	}
-
+	
 	@Override
-	public String toString(){
+	public String toString() {
 		return name;
 	}
 }
